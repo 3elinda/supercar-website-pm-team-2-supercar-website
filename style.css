@@ -1,0 +1,42 @@
+/* MENU BAR */
+nav {
+    background-color: #000000;
+    color: #fff;
+}
+
+.btn {
+    color: white;
+    cursor: pointer;
+}
+
+.nav-m {
+    display: none;
+    position: absolute;
+}
+
+.nav-m a {
+    display: block;
+}
+
+#check:checked ~ .nav-m {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+
