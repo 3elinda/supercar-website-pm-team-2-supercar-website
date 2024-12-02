@@ -149,6 +149,8 @@ footer h2,h3 {
   width: 226px;
   height: 248px;
   margin-top:20%;
+  object-fit: cover;
+  margin-bottom: 10%;
 }
 
 .footerhead {
