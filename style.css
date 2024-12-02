@@ -238,3 +238,13 @@ footer h2,h3 {
   font-family: lexend;
   font-weight: 300;
  }
+
+ .linkedin {
+  width: 45px;
+  height:49px;
+ }
+
+ .linkedin img {
+  width: 45px;
+  height: 45px;
+ }
