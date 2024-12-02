@@ -135,6 +135,13 @@ footer {
   max-height:500px;
   align-items:flex-start;
   background: black;
+  box-shadow: 0px 4px 50px 25px rgba(255, 255, 255, 0.25);
+  align-content: space-around;
+  
+}
+
+footer h2,h3 {
+  font-weight: 100;
 }
 
 .trion-logo-foot {
@@ -147,18 +154,17 @@ footer {
   font-size: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 20px;
+
 }
 
 .footercontent {
   font-size: 20px;
-  width:568px;
-  margin-left: 20px;
+  width:389px;
+  color: #979797;
 }
 
 .email {
   font-size: 20px;
-  margin-left: 20px;
   
 }
 
@@ -173,8 +179,9 @@ footer {
 .subscribe {
   text-align: center;
   padding: 10px;
-  border-radius: 15px;
-  background: #7c270b;
+  border-radius: 170px;
+  background: linear-gradient(116deg, rgba(130, 22, 25, 0.80) 0%, rgba(130, 22, 25, 0.10) 100%);
+  box-shadow: 0px 4px 50px rgba(255, 255, 255, 0.25);
 }
 
 .emailtitle {
@@ -209,6 +216,11 @@ footer {
   src: url(/fonts/Orbitron-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: lexend;
+  src: url(/fonts/Lexend-VariableFont_wght.ttf)
+}
+
  h1 ,h2, h3 {
   font-family: orbitron;
  }
@@ -219,4 +231,9 @@ footer {
   align-items: center;
   object-fit:cover;
   width:225.99px;
+ }
+
+ .footercontent, .emailtitle, .input, .subscribe {
+  font-family: lexend;
+  font-weight: 300;
  }
