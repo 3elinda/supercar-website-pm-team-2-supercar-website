@@ -13,61 +13,68 @@ body {
 nav {
   /* border: 2px solid red; */
   margin: 0;
-  height: 50px;
+  height: 60px;
   width: 100%;
   background-color: #000;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-content {
+  /* border: 2px solid purple; */
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: calc(45px / 2);
 }
 
 .nav-logo {
   display: flex;
-  justify-content: flex-end; 
   height: 45px;
-  width: 53%;
   margin: 5px 0;
+  margin: 0 auto;
 }
 
 .nav-icons {
   display: flex;
-  height: 45px;
-  width: 45%;
   justify-content: flex-end;
+  height: 45px;
+  width: 100%;
 }
 
-.nav-icons img {
-  margin: 5px 0;
+.first-icon {
+  margin-top: 2px;
 }
 
-.nav-icons img:first-of-type {
-  margin-right: 50px;
-}
-
-.nav-icons img:nth-of-type(2) {
-  margin-right: 15px;
+.second-icon {
+  margin-left: 10%;
 }
 
 /* slide animation for menu*/
 .m-side {
   height: 100%;
-  width: 295px;
+  width: 400px;
   position: absolute;
   background-color: #000;
   transition: 0.5s ease;
-  transform: translateX(-295px);
+  transform: translateX(-400px);
   left: 0;
 }
 
 ul li {
   list-style: none;
   font-family: orbitron;
-  font-size: 30px;
+  font-size: 40px;
+  /* text-align: center; */
 }
 
 ul li a {
   text-decoration: none;
   color: white;
-  padding: 15px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 4%;
   display: block;
   text-decoration: none;
   transition: 0.2s ease-out;
@@ -86,12 +93,12 @@ input {
   position: absolute;
   height: 45px;
   width: 45px;
-  top: 0;
-  left: 10px;
+  top: 7px;
+  left: calc(45px / 2);
   background-color: #000;
   /* z-index: 1; */
   cursor: pointer;
-  /* border: 2px solid red; */
+  /* border: 2px solid yellow; */
 }
 
 .toggle .lines {
@@ -141,8 +148,17 @@ input:checked ~ .m-side {
 .hero-text {
   color: white;
   text-align: center;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
   /* border: 2px solid red; */
+  width: 100%;
 }
+/* 
+.configure-your {
+  border-radius: 170px;
+} */
 
 .hero-text h1 {
   margin-top: 0;
@@ -158,27 +174,27 @@ h1 {
 
 footer {
   color: white;
-  margin-top:50%;
-  display:flex;
+  margin-top: 50%;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  max-height:500px;
-  align-items:flex-start;
+  max-height: 500px;
+  align-items: flex-start;
   background: black;
   box-shadow: 0px 4px 50px 25px rgba(255, 255, 255, 0.25);
   align-content: space-around;
   padding-top: 40px;
-  
 }
 
-footer h2,h3 {
+footer h2,
+h3 {
   font-weight: 100;
 }
 
 .trion-logo-foot {
   width: 226px;
   height: 248px;
-  margin-top:20%;
+  margin-top: 20%;
   object-fit: cover;
   margin-bottom: 10%;
 }
@@ -187,25 +203,23 @@ footer h2,h3 {
   font-size: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
-
 }
 
 .footercontent {
   font-size: 20px;
-  width:389px;
+  width: 389px;
   color: #979797;
 }
 
 .email {
   font-size: 20px;
-  
 }
 
 .input {
   color: #575757;
   padding: 10px;
   width: 200%;
-  margin:0;
+  margin: 0;
   border: #575757 solid 2px;
 }
 
@@ -213,12 +227,16 @@ footer h2,h3 {
   text-align: center;
   padding: 10px;
   border-radius: 170px;
-  background: linear-gradient(116deg, rgba(130, 22, 25, 0.80) 0%, rgba(130, 22, 25, 0.10) 100%);
+  background: linear-gradient(
+    116deg,
+    rgba(130, 22, 25, 0.8) 0%,
+    rgba(130, 22, 25, 0.1) 100%
+  );
   box-shadow: 0px 4px 50px rgba(255, 255, 255, 0.25);
 }
 
 .emailtitle {
-  margin:5px;
+  margin: 5px;
 }
 
 .copyright {
@@ -228,7 +246,7 @@ footer h2,h3 {
 }
 
 .footnavcontent a {
-  margin-left:30px;
+  margin-left: 30px;
   font-size: 20px;
   text-decoration: none;
   color: #979797;
@@ -236,11 +254,11 @@ footer h2,h3 {
 
 .footnav h2 {
   font-size: 30px;
-  margin:10px;
+  margin: 10px;
 }
 
 .trion-socials {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -251,32 +269,37 @@ footer h2,h3 {
 
 @font-face {
   font-family: lexend;
-  src: url(/fonts/Lexend-VariableFont_wght.ttf)
+  src: url(/fonts/Lexend-VariableFont_wght.ttf);
 }
 
- h1 ,h2, h3 {
+h1,
+h2,
+h3 {
   font-family: orbitron;
- }
+}
 
- .social-links  {
-  display:flex;
+.social-links {
+  display: flex;
   justify-content: space-around;
   align-items: center;
-  object-fit:cover;
-  width:225.99px;
- }
+  object-fit: cover;
+  width: 225.99px;
+}
 
- .footercontent, .emailtitle, .input, .subscribe {
+.footercontent,
+.emailtitle,
+.input,
+.subscribe {
   font-family: lexend;
   font-weight: 300;
- }
+}
 
- .linkedin {
+.linkedin {
   width: 45px;
-  height:49px;
- }
+  height: 49px;
+}
 
- .linkedin img {
+.linkedin img {
   width: 45px;
   height: 45px;
- }
+}
