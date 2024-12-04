@@ -6,6 +6,7 @@
 
 body {
   background-color: #000;
+  color:white;
   padding: 0;
   margin: 0;
 }
@@ -194,17 +195,62 @@ h1 {
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.car-desc,
-.car-desc h2 {
+.car-desc, .drive-desc, .blackwidowmain, .nemesismain {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   color: white;
   font-weight: 300;
-  max-width: 45%;
+  max-width: 40%;
+  background-color: #131417;
+  margin-top: 4%;
+  padding: 5%;
+  align-items: center;
+  flex-grow: 1;
+}
+
+main h2 {
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.car-desc p {
+  font-size: 23px;
+}
+
+.blackwidowmain,.nemesismain {
+  background: none;
+  max-width:40%;
+  padding: 0;
+  object-fit: cover;
+  
+  
+}
+
+/* SUPERCARS PAGE******/
+/* .supercars {
+  border: 2px solid red;
+  display: flex;
+} */
+/* 
+.supercars img:first-of-type {
+  border: 2px solid yellow;
+}
+
+.supercars img:last-of-type {
+  border: 2px solid green;
+} */
+
+.models {
+  border: 2px solid yellow;
+  background-image: url(/images/Nemesis-back.png), url(/images/BlackWidow-front-trapezoid.png);
+  background-position: left, right;
+  background-repeat: no-repeat, no-repeat;
+  height: 95vh;
 }
 
 /* Footer Section */
