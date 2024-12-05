@@ -6,7 +6,7 @@
 
 body {
   background-color: #000;
-  color:white;
+  color: white;
   padding: 0;
   margin: 0;
 }
@@ -200,7 +200,10 @@ main {
   flex-wrap: wrap;
 }
 
-.car-desc, .drive-desc, .blackwidowmain, .nemesismain {
+.car-desc,
+.drive-desc,
+.blackwidowmain,
+.nemesismain {
   display: flex;
   flex-direction: column;
   color: white;
@@ -222,35 +225,66 @@ main h2 {
   font-size: 23px;
 }
 
-.blackwidowmain,.nemesismain {
+.blackwidowmain,
+.nemesismain {
   background: none;
-  max-width:40%;
+  max-width: 40%;
   padding: 0;
   object-fit: cover;
-  
-  
 }
 
 /* SUPERCARS PAGE******/
-/* .supercars {
-  border: 2px solid red;
-  display: flex;
-} */
-/* 
-.supercars img:first-of-type {
-  border: 2px solid yellow;
+
+.supercars {
+  /* border: 2px solid red; */
+  position: relative;
+  height: 95vh;
 }
 
-.supercars img:last-of-type {
-  border: 2px solid green;
-} */
+.logo-container {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 824px;
+  transform: translateY(-100%);
+}
 
-.models {
-  border: 2px solid yellow;
-  background-image: url(/images/Nemesis-back.png), url(/images/BlackWidow-front-trapezoid.png);
-  background-position: left, right;
-  background-repeat: no-repeat, no-repeat;
-  height: 95vh;
+.logo-center {
+  display: flex;
+  height: 165px;
+  /* justify-content: center; */
+  /* border: 2px solid orange; */
+}
+
+.cars {
+  /* border: 2px solid blue; */
+  display: flex;
+}
+
+.trapezoid {
+  width: 839px;
+  height: 824px;
+  background: url(/images/Nemesis-back-full.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  clip-path: polygon(0% 100%, 60% 100%, 100% 0, 0 0);
+  /* border: 2px solid yellowgreen; */
+}
+/*0 100% is bottom-left corner, 
+  60% 100% means bottom-right corner is 60% across width,
+  100% 0 is the top-right corner,
+  0 0 is the top-left corner */
+/* clip-path-clips an element to a shape */
+
+.trapezoid2 {
+  width: 839px;
+  height: 824px;
+  background: url(/images/BlackWidow-front.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0, 40% 0);
+  /* border: 2px solid hotpink; */
 }
 
 /* Footer Section */
