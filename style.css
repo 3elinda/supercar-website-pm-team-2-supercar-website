@@ -159,7 +159,7 @@ input:checked ~ .m-side {
   /* border: 2px solid red; */
 }
 
-.configure-your {
+.blue-buttons {
   border-radius: 170px;
   text-align: center;
   padding: 30px 45px;
@@ -177,7 +177,7 @@ input:checked ~ .m-side {
   /* margin-bottom: 20px; */
 }
 
-.configure-your:hover {
+.blue-buttons:hover {
   border: 1px solid white;
 }
 
@@ -203,7 +203,9 @@ main {
 .car-desc,
 .drive-desc,
 .blackwidowmain,
-.nemesismain {
+.nemesismain,
+.sema-logo,
+.events-desc {
   display: flex;
   flex-direction: column;
   color: white;
@@ -221,7 +223,7 @@ main h2 {
   font-weight: 100;
 }
 
-.car-desc p {
+.car-desc p, .events-desc p {
   font-size: 23px;
 }
 
@@ -230,7 +232,27 @@ main h2 {
   background: none;
   max-width: 40%;
   padding: 0;
+  padding-top: 5%;
   object-fit: cover;
+  
+}
+
+.nemesismain {
+  margin-top: 0;
+  align-self: flex-start;
+  
+}
+
+.blackwidowmain {
+  margin-top: 15%;
+}
+
+.hyperdrive {
+  max-width: 100%;
+}
+
+.events-desc {
+  align-items:flex-start;
 }
 
 /* SUPERCARS PAGE******/
@@ -246,28 +268,28 @@ main h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 824px;
+  height: 95vh;
   transform: translateY(-100%);
 }
 
 .logo-center {
   display: flex;
   height: 165px;
-  /* justify-content: center; */
-  /* border: 2px solid orange; */
 }
 
 .cars {
   /* border: 2px solid blue; */
   display: flex;
+  height: 95vh;
 }
 
 .trapezoid {
-  width: 839px;
-  height: 824px;
+  /* width: 839px; */
+  width: 70vw;
+  height: 95vh;
   background: url(/images/Nemesis-back-full.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   clip-path: polygon(0% 100%, 60% 100%, 100% 0, 0 0);
   /* border: 2px solid yellowgreen; */
 }
@@ -275,16 +297,38 @@ main h2 {
   60% 100% means bottom-right corner is 60% across width,
   100% 0 is the top-right corner,
   0 0 is the top-left corner */
-/* clip-path-clips an element to a shape */
+/* clip-path-clips an element to create a shape */
 
 .trapezoid2 {
-  width: 839px;
-  height: 824px;
+  /* width: 839px; */
+  width: 50vw;
+  height: 95vh;
   background: url(/images/BlackWidow-front.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   clip-path: polygon(0 100%, 100% 100%, 100% 0, 40% 0);
   /* border: 2px solid hotpink; */
+}
+
+.car-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  height: 95vh;
+  transform: translateY(-200%);
+  /* border: 2px solid blue; */
+}
+
+#nemesis-button {
+  padding-right: 121px;
+  padding-left: 121px;
+}
+  /* padding: 30px 45px; */
+
+/* SUPERCARS PAGE******/
+.nemesis-hero {
+  background: url(/images/);
 }
 
 /* Footer Section */
@@ -295,7 +339,7 @@ p {
 
 footer {
   color: white;
-  margin-top: 50%;
+  margin-top: 15%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
