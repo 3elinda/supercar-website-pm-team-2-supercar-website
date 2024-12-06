@@ -223,7 +223,8 @@ main h2 {
   font-weight: 100;
 }
 
-.car-desc p, .events-desc p {
+.car-desc p,
+.events-desc p {
   font-size: 23px;
 }
 
@@ -234,13 +235,11 @@ main h2 {
   padding: 0;
   padding-top: 5%;
   object-fit: cover;
-  
 }
 
 .nemesismain {
   margin-top: 0;
   align-self: flex-start;
-  
 }
 
 .blackwidowmain {
@@ -252,83 +251,7 @@ main h2 {
 }
 
 .events-desc {
-  align-items:flex-start;
-}
-
-/* SUPERCARS PAGE******/
-
-.supercars {
-  /* border: 2px solid red; */
-  position: relative;
-  height: 95vh;
-}
-
-.logo-container {
-  /* border: 2px solid green; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 95vh;
-  transform: translateY(-100%);
-}
-
-.logo-center {
-  display: flex;
-  height: 165px;
-}
-
-.cars {
-  /* border: 2px solid blue; */
-  display: flex;
-  height: 95vh;
-}
-
-.trapezoid {
-  /* width: 839px; */
-  width: 70vw;
-  height: 95vh;
-  background: url(/images/Nemesis-back-full.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  clip-path: polygon(0% 100%, 60% 100%, 100% 0, 0 0);
-  /* border: 2px solid yellowgreen; */
-}
-/*0 100% is bottom-left corner, 
-  60% 100% means bottom-right corner is 60% across width,
-  100% 0 is the top-right corner,
-  0 0 is the top-left corner */
-/* clip-path-clips an element to create a shape */
-
-.trapezoid2 {
-  /* width: 839px; */
-  width: 50vw;
-  height: 95vh;
-  background: url(/images/BlackWidow-front.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  clip-path: polygon(0 100%, 100% 100%, 100% 0, 40% 0);
-  /* border: 2px solid hotpink; */
-}
-
-.car-options {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
-  height: 95vh;
-  transform: translateY(-200%);
-  /* border: 2px solid blue; */
-}
-
-#nemesis-button {
-  padding-right: 121px;
-  padding-left: 121px;
-}
-  /* padding: 30px 45px; */
-
-/* SUPERCARS PAGE******/
-.nemesis-hero {
-  background: url(/images/);
+  align-items: flex-start;
 }
 
 /* Footer Section */
