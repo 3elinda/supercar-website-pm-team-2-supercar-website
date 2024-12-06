@@ -140,7 +140,7 @@ input:checked ~ .m-side {
 .blue-buttons {
   border-radius: 170px;
   text-align: center;
-  padding: 30px 45px;
+  padding: 30px 110px;
   color: white;
   font-size: 50px;
   font-family: lexend;
@@ -225,10 +225,6 @@ h1 {
   /* border: 2px solid blue; */
 }
 
-#nemesis-button {
-  padding-right: 121px;
-  padding-left: 121px;
-}
 /* padding: 30px 45px; */
 
 @font-face {
