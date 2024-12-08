@@ -139,7 +139,7 @@ input:checked ~ .m-side {
 
 /* Hero image */
 .hero-image {
-  background: url(/images/Nemesis_front-side.png);
+  background: url(/images/blackwidow-full.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,34 +187,33 @@ input:checked ~ .m-side {
   /* border: 2px solid green; */
 }
 
-h1 {
-  font-size: 200px;
-}
-
 /* Main Section */
-
 main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 5%;
+}
+
+main h2 {
+  font-size: 50px;
+  font-weight: 100;
 }
 
 .nemesis-side {
   object-fit: cover;
 }
 
-.apart-txt-cont {
-  align-self: flex-end;
-}
-
-.explanation {
+.this-is-the-future {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 5%;
+  margin-left: 5%;
+}
+
+.the-track-text {
+  align-self: flex-end;
 }
 
 main p {
@@ -223,17 +222,15 @@ main p {
   font-weight: 300;
 }
 
-.origin {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 main h2 {
   font-size: 50px;
   font-weight: 100;
 }
 
+.blackwidow-side {
+  object-fit: cover;
+  border: 2px solid red;
+}
 /* Footer Section */
 
 p {
@@ -328,6 +325,10 @@ h3 {
 .trion-socials {
   display: flex;
   flex-direction: column;
+}
+
+h1 {
+  font-size: 200px;
 }
 
 @font-face {
