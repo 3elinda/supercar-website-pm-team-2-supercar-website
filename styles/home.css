@@ -250,6 +250,24 @@ main h2 {
   max-width: 100%;
 }
 
+.nemesismain {
+  background-image: url(/images/grey-transition.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.blackwidowmain {
+  background-image: url(/images/red-transition.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sema-logo, .events-desc{
+  margin-top: 0;
+}
+
+
 .events-desc {
   align-items: flex-start;
 }
