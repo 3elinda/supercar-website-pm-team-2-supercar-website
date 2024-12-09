@@ -217,8 +217,16 @@ main {
   margin: 5%;
 }
 
+.origin img {
+  min-width: 40%;
+}
+
+main h3 {
+  font-size: 30px;
+}
+
 main p {
-  max-width: 40%;
+  max-width: 70%;
   font-size: 23px;
   font-weight: 300;
 }
@@ -232,6 +240,39 @@ main p {
 main h2 {
   font-size: 50px;
   font-weight: 100;
+}
+
+.people {
+  display: flex;
+  flex-direction: column;
+}
+
+.people-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.people-list div {
+  max-width: 30%;
+}
+
+.people-list img {
+  max-width: 100%;
+}
+
+.people-list p {
+  font-size: 20px;
+  color: #979797;
+}
+
+.brent, .nancy, .quinton, .kie, .romeo, .warren {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2%;
 }
 
 /* Footer Section */
