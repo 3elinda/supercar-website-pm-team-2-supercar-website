@@ -137,6 +137,20 @@
     color: #7c270b;
   }
 
+  hr {
+    margin-right: 11%;
+  }
+
+  /* Hero image */
+  .hero-image {
+    background: url(/images/trion-hoodie.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 93.5vh;
+    /* border: 2px solid red; */
+  }
   
 @font-face {
     font-family: orbitron;

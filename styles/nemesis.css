@@ -193,6 +193,7 @@ main {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 5%;
 }
 
 main h2 {
@@ -200,8 +201,13 @@ main h2 {
   font-weight: 100;
 }
 
+.nemesis-info {
+  margin: 5%;
+}
+
 .nemesis-side {
-  object-fit: cover;
+  width: 100%;
+  /* border: 2px solid green; */
 }
 /* Footer Section */
 

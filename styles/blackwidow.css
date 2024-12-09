@@ -142,7 +142,7 @@ input:checked ~ .m-side {
   background: url(/images/blackwidow-full.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   position: relative;
   height: 100vh;
   /* border: 2px solid red; */
@@ -165,7 +165,7 @@ input:checked ~ .m-side {
   padding: 30px 45px;
   color: white;
   font-size: 50px;
-  font-family: lexend;
+  font-family: questrial;
   text-decoration: none;
   background: linear-gradient(
     103deg,
@@ -193,6 +193,7 @@ main {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 5%;
 }
 
 main h2 {
@@ -200,16 +201,13 @@ main h2 {
   font-weight: 100;
 }
 
-.nemesis-side {
-  object-fit: cover;
-}
-
 .this-is-the-future {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-left: 5%;
+  margin: 5%;
+  /* border: 2px solid green; */
 }
 
 .the-track-text {
@@ -228,8 +226,8 @@ main h2 {
 }
 
 .blackwidow-side {
-  object-fit: cover;
-  border: 2px solid red;
+  width: 100%;
+  /* border: 2px solid green; */
 }
 /* Footer Section */
 
@@ -307,7 +305,7 @@ h3 {
 .copyright {
   margin-top: 50%;
   color: #575757;
-  font-family: lexend;
+  font-family: questrial;
 }
 
 .footnavcontent a {
@@ -337,6 +335,11 @@ h1 {
 }
 
 @font-face {
+  font-family: questrial;
+  src: url(/fonts/Questrial-Regular.ttf);
+}
+
+@font-face {
   font-family: lexend;
   src: url(/fonts/Lexend-VariableFont_wght.ttf);
 }
@@ -359,7 +362,7 @@ h3 {
 .emailtitle,
 .input,
 .subscribe {
-  font-family: lexend;
+  font-family: questrial;
   font-weight: 300;
 }
 
