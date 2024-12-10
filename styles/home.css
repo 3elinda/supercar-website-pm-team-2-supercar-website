@@ -213,7 +213,8 @@ main {
   max-width: 40%;
   background-color: #131417;
   margin-top: 4%;
-  padding: 5%;
+  padding: 8%;
+  padding-top: 5%;
   align-items: center;
   flex-grow: 1;
 }
@@ -221,11 +222,12 @@ main {
 main h2 {
   font-size: 50px;
   font-weight: 100;
+  margin-top: 0;
 }
 
 .car-desc p,
 .events-desc p {
-  font-size: 23px;
+  font-size: 30px;
 }
 
 .blackwidowmain,
@@ -235,6 +237,11 @@ main h2 {
   padding: 0;
   padding-top: 5%;
   object-fit: cover;
+  padding-top: 0;
+}
+
+.car-desc {
+  padding-bottom: 10%;
 }
 
 .nemesismain {
@@ -243,24 +250,18 @@ main h2 {
 }
 
 .blackwidowmain {
-  margin-top: 15%;
+  padding-top: 5%;
+  margin-top: 0;
 }
 
 .hyperdrive {
-  max-width: 100%;
+  max-width: 75%;
+  width: 100%;
+  margin-top: 5%;
 }
 
-.nemesismain {
-  background-image: url(/images/grey-transition.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-}
-
-.blackwidowmain {
-  background-image: url(/images/red-transition.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.sema-logo {
+  object-fit: cover;
 }
 
 .sema-logo, .events-desc{
