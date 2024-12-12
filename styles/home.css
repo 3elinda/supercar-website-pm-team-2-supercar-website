@@ -262,6 +262,8 @@ main h2 {
 
 .sema-logo {
   object-fit: cover;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .sema-logo, .events-desc{

@@ -53,18 +53,17 @@ nav {
 }
 
 .arrow-container {
-  /* border: 2px solid green; */
   margin-right: 45%;
 }
 
 /* HERO IMAGE */
 .hero-image {
-  background: url(/images/shoes-brown.png);
+  background-image: url(/images/shoes-brown.png);
+  /* background: linear-gradient(180deg, #252525 6%, #8B8B8B 100%); */
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   height: 50vh;
-  border: 2px solid red;
 }
 
 /* MAIN */
@@ -72,13 +71,71 @@ p {
   font-family: orbitron;
 }
 
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
 .section-1 {
-  width: 50%;
+  margin-left: 5%;
+}
+
+.item-options {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  align-items: center;
 }
 
 .price {
   display: flex;
   justify-content: space-between;
+}
+
+.price p {
+  font-family: lexend;
+}
+
+.section-2 {
+  margin-right: 5%;
+}
+
+.sect-2-container {
+  border-left: 1px solid #5A5A5A;
+  border-right: 1px solid #5A5A5A;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo-container {
+  display: flex;
+  height: 150px;
+  justify-self: center;
+}
+
+.more-options {
+  width: auto;
+}
+
+.more-options p{
+  font-family: questrial;
+  font-size: 23px;
+}
+
+#shipping {
+  margin-bottom: 25px;
+}
+
+.add-cart-btn {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 25px 70px;
+  border: 0.914px solid #702528;
+  color: white;
+  font-family: questrial;
+  font-size: 30px;
+  text-decoration: none;
+  background: linear-gradient(103deg, rgba(130, 22, 25, 0.80) -0.19%, rgba(130, 22, 25, 0.10) 81.19%);
 }
 
 @font-face {

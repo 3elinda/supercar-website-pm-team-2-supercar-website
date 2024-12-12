@@ -194,7 +194,7 @@ h1 {
   /* width: 839px; */
   width: 60vw;
   height: 93.5vh;
-  background: url(/images/graysupercar.jpg);
+  background: url(/images/graysupercar-no-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   clip-path: polygon(0% 100%, 60% 100%, 100% 0, 0 0);

@@ -216,3 +216,67 @@
   
 /* Main Section */
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 20%;
+}
+
+main h2 {
+  font-size: 50px;
+  max-width: 370px;
+}
+
+.finalize {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 170px;
+  background: linear-gradient(
+    116deg,
+    rgba(130, 22, 25, 0.8) 0%,
+    rgba(130, 22, 25, 0.1) 100%
+  );
+  box-shadow: 0px 4px 50px rgba(255, 255, 255, 0.25);
+  max-width: 30%;
+}
+
+main h3 {
+  font-family: lexend;
+  font-weight: 200;
+}
+
+main p {
+  color: #575757;
+  border: solid 1px #575757;
+  padding: 1%;
+  font-weight: 300;
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+}
+
+.check p {
+  border: none;
+  color: white;
+  font-weight: 200;
+}
+
+.check .box {
+  border: solid 1px #575757;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+  text-indent: 1000px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-right: 5%;
+}
