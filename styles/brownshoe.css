@@ -1,0 +1,102 @@
+/* /* MENU BAR  */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  /* border: 2px solid red; */
+  margin: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-content {
+  /* border: 2px solid purple; */
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: calc(45px / 2);
+}
+
+.nav-logo {
+  display: flex;
+  height: 45px;
+  margin: 5px 0;
+  margin: 0 auto;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: flex-end;
+  height: 45px;
+  width: 100%;
+}
+
+.first-icon {
+  margin-top: 2px;
+}
+
+.second-icon {
+  margin-left: 10%;
+}
+
+.arrow-container {
+  /* border: 2px solid green; */
+  margin-right: 45%;
+}
+
+/* HERO IMAGE */
+.hero-image {
+  background: url(/images/shoes-brown.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 50vh;
+  border: 2px solid red;
+}
+
+/* MAIN */
+p {
+  font-family: orbitron;
+}
+
+.section-1 {
+  width: 50%;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+@font-face {
+  font-family: orbitron;
+  src: url(/fonts/Orbitron-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: lexend;
+  src: url(/fonts/Lexend-VariableFont_wght.ttf);
+}
+
+h1,
+h2,
+h3 {
+  font-family: orbitron;
+}
+
+h2 {
+  font-size: 50px;
+}
