@@ -165,11 +165,47 @@ hr {
 
 /* Hero image */
 .hero-image {
-  background: url(/images/front-1.png);
+  background: url(/images/Nemesis-side.png);
   background-position: center;
   background-repeat: no-repeat;
   /* background-size: cover; */
   position: relative;
-  height: 93.5vh;
+  height: 80vh;
   /* border: 2px solid red; */
 }
+
+.continue {
+    text-align: center;
+    font-size: 20px;
+    padding: 3%;
+    border-radius: 170px;
+    background: linear-gradient(
+      116deg,
+      rgba(130, 22, 25, 0.8) 0%,
+      rgba(130, 22, 25, 0.1) 100%
+    );
+    box-shadow: 0px 4px 50px rgba(255, 255, 255, 0.25);
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .resume-config a {
+    font-family: lexend;
+    text-decoration: none;
+    color: white;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 5%;
+  }
+
+  .resume-config {
+    padding-right: 5%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
