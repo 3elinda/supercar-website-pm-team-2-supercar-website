@@ -266,10 +266,10 @@ main h2 {
   padding-right: 4%;
 }
 
-.sema-logo, .events-desc{
+.sema-logo,
+.events-desc {
   margin-top: 0;
 }
-
 
 .events-desc {
   align-items: flex-start;
