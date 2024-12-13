@@ -216,6 +216,10 @@ main {
   margin: 5%;
 }
 
+.explanation p {
+  max-width: 50%;
+}
+
 .origin img {
   min-width: 40%;
 }
