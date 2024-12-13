@@ -168,16 +168,17 @@ hr {
   background: url(/images/Nemesis-side.png);
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size:contain;
   position: relative;
-  height: 80vh;
+  height: 75vh;
   /* border: 2px solid red; */
 }
 
 .continue {
     text-align: center;
-    font-size: 20px;
-    padding: 3%;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 5%;
     border-radius: 170px;
     background: linear-gradient(
       116deg,
@@ -200,7 +201,6 @@ hr {
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
-    padding-bottom: 5%;
   }
 
   .resume-config {
