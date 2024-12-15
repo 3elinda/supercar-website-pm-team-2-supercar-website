@@ -82,25 +82,7 @@ nav {
   width: 100%;
 }
 
-.blue-buttons {
-  border-radius: 170px;
-  text-align: center;
-  padding: 30px 45px;
-  color: white;
-  font-size: 50px;
-  font-family: lexend;
-  text-decoration: none;
-  background: linear-gradient(
-    103deg,
-    rgba(63, 82, 192, 0.8) -0.19%,
-    rgba(63, 82, 192, 0.1) 81.19%
-  );
-  box-shadow: 0px 4px 50px 0px rgba(255, 255, 255, 0.25);
-  border: 1px solid #babed2;
-  /* margin-bottom: 20px; */
-}
-
-.blue-buttons:hover {
+.red-button:hover {
   border: 1px solid white;
 }
 
@@ -159,30 +141,67 @@ input:checked ~ .sidebar {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  overflow: scroll;
 }
 
 /* COSTUMIZE SECTION CONTENT */
 .shape-and-arrow {
   display: flex;
-  /* border: 2px solid red; */
 }
 
-.trapezoid {
-  background: linear-gradient(90deg, #12162D 6%, #1A2148 29.5%, #232C5F 52.5%, #313C78 100%);
+.shape-and-arrow:has(details[open]) .arrow-down {
+  display: none;
+}
+
+.shape-and-arrow:has(details:not([open])) .arrow-up {
+  display: none;
+}
+/* :has detects when <details> is open. 
+When opened the .arrow-down img is gone and .arrow-up appears. 
+When closed the opposite*/
+
+.shape-and-arrow:has(details[open]) .trapezoid-down {
+  background: linear-gradient(
+    90deg,
+    #12162d 6%,
+    #1a2148 29.5%,
+    #232c5f 52.5%,
+    #313c78 100%
+  );
   width: 380px;
   height: 80px;
   clip-path: polygon(0% 100%, 85% 100%, 100% 0, 0 0);
   display: flex;
   align-items: center;
-}
-
-.trapezoid h4 {
-  margin-left: 5%;
-}
-
-h4 {
+  font-family: orbitron;
   font-size: 25px;
-  font-weight: 100;
+  padding-left: 5%;
+  cursor: pointer;
+}
+
+details > summary {
+  background: linear-gradient(
+    90deg,
+    #12162d 6%,
+    #1a2148 29.5%,
+    #232c5f 52.5%,
+    #313c78 100%
+  );
+  width: 380px;
+  height: 80px;
+  clip-path: polygon(0% 100%, 100% 100%, 85% 0, 0 0);
+  display: flex;
+  align-items: center;
+  font-family: orbitron;
+  font-size: 25px;
+  padding-left: 5%;
+  cursor: pointer;
+}
+
+details > p {
+  background: #131417;
+  width: 375px;
+  height: 215px;
 }
 
 .red-button {
@@ -193,7 +212,11 @@ h4 {
   font-size: 30px;
   font-family: lexend;
   text-decoration: none;
-  background: linear-gradient(103deg, rgba(130, 22, 25, 0.80) -0.19%, rgba(130, 22, 25, 0.10) 81.19%);
+  background: linear-gradient(
+    103deg,
+    rgba(130, 22, 25, 0.8) -0.19%,
+    rgba(130, 22, 25, 0.1) 81.19%
+  );
   box-shadow: 0px 3.337px 41.714px 0px rgba(255, 255, 255, 0.25);
   border: 0.834px solid #702528;
 }
@@ -212,7 +235,8 @@ h4 {
 
 h1,
 h2,
-h3, h4 {
+h3,
+h4 {
   font-family: orbitron;
 }
 
