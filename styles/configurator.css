@@ -189,6 +189,13 @@ details > div {
   margin-top: 5%;
 }
 
+details > p {
+  background: #131417;
+  width: 375px;
+  height: 215px;
+  margin-top: 5%;
+}
+
 .content-container {
   display: flex;
   flex-direction: column;
