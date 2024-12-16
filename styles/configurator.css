@@ -72,24 +72,8 @@ nav {
   /* border: 2px solid red; */
 }
 
-.hero-text {
-  color: white;
-  text-align: center;
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translate(-50%);
-  width: 100%;
-}
-
 .red-button:hover {
   border: 1px solid white;
-}
-
-.hero-text h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-  /* border: 2px solid green; */
 }
 
 h1 {
@@ -202,6 +186,7 @@ details > div {
   background: #131417;
   width: 375px;
   height: 215px;
+  margin-top: 5%;
 }
 
 .content-container {
@@ -210,9 +195,67 @@ details > div {
   justify-content: center;
 }
 
-.colors {
+.color-switcher {
   display: flex;
   justify-content: space-around;
+}
+
+.colors img {
+  display: none;
+  cursor: pointer;
+}
+
+/* default colors for brakes and calipers*/
+#color-default:checked ~ .color-switcher .yellow-check {
+  display: block;
+}
+#color-default:checked ~ .color-switcher .green {
+  display: block;
+}
+#color-default:checked ~ .color-switcher .grey {
+  display: block;
+}
+
+/* yellow-check is checked */
+#yellow-check:checked ~ .color-switcher .yellow-check {
+  display: block;
+}
+#yellow-check:checked ~ .color-switcher .green {
+  display: block;
+}
+#yellow-check:checked ~ .color-switcher .grey {
+  display: block;
+}
+#yellow-check:checked ~ .color-switcher .yellow {
+  display: none;
+}
+
+/* green is checked */
+#green:checked ~ .color-switcher .green-check {
+  display: block;
+}
+#green:checked ~ .color-switcher .yellow {
+  display: block;
+}
+#green:checked ~ .color-switcher .grey {
+  display: block;
+}
+#green:checked ~ .color-switcher .green {
+  display: none;
+}
+
+/* grey is checked */
+#grey:checked ~ .color-switcher .grey-check {
+  display: block;
+}
+#grey:checked ~ .color-switcher .yellow {
+  display: block;
+}
+#grey:checked ~ .color-switcher .green {
+  display: block;
+}
+#grey:checked ~ .color-switcher .grey {
+  display: none;
 }
 
 .color-names {

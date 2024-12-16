@@ -43,9 +43,7 @@
         </div>
       </nav>
 
-      <div class="hero-image">
-        <div class="hero-text"></div>
-      </div>
+      <div class="hero-image"></div>
     </header>
     <main>
       <label for="check" class="sidebar-icon">
@@ -59,13 +57,60 @@
             <details>
               <summary class="trapezoid-down">BRAKES/CALIPERS</summary>
               <div class="content-container">
-                <div class="colors">
-                  <img
-                    src="/images/color-yellow-check.png"
-                    alt="color-yellow-check"
-                  />
-                  <img src="/images/color-green.png" alt="color-green" />
-                  <img src="/images/color-grey.png" alt="color-grey" />
+                <!-- the state cheked -->
+                <input
+                  type="radio"
+                  id="color-default"
+                  name="color-toggle"
+                  hidden
+                  checked
+                />
+                <input
+                  type="radio"
+                  id="yellow-check"
+                  name="color-toggle"
+                  hidden
+                />
+                <input type="radio" id="green" name="color-toggle" hidden />
+                <input type="radio" id="grey" name="color-toggle" hidden />
+                <!-- for color switching -->
+                <div class="color-switcher">
+                  <label for="yellow-check" class="colors">
+                    <img
+                      src="/images/color-yellow-check.png"
+                      alt="yellow-check"
+                      class="yellow-check"
+                    />
+                    <img
+                      src="/images/color-yellow.png"
+                      alt="yellow"
+                      class="yellow"
+                    />
+                  </label>
+                  <label for="green" class="colors">
+                    <img
+                      src="/images/color-green.png"
+                      alt="green"
+                      class="green"
+                    />
+                    <img
+                      src="/images/color-green-check.png"
+                      alt="color-green-check"
+                      class="green-check"
+                    />
+                  </label>
+                  <label for="grey" class="colors">
+                    <img
+                      src="/images/color-grey.png"
+                      alt="color-grey"
+                      class="grey"
+                    />
+                    <img
+                      src="/images/color-grey-check.png"
+                      alt="color-grey-check"
+                      class="grey-check"
+                    />
+                  </label>
                 </div>
                 <div class="color-names">
                   <p>YELLOW</p>
