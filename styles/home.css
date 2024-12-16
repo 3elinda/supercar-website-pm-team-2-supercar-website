@@ -174,7 +174,6 @@ input:checked ~ .m-side {
   );
   box-shadow: 0px 4px 50px 0px rgba(255, 255, 255, 0.25);
   border: 1px solid #babed2;
-  /* margin-bottom: 20px; */
 }
 
 .blue-buttons:hover {
@@ -411,4 +410,37 @@ h3 {
 .linkedin img {
   width: 45px;
   height: 45px;
+}
+
+@media screen and (max-width: 520px){
+  .hero-image {
+    background-size: contain;
+    height: 50vh;
+  }
+
+  .hero-text h1{
+    padding-top: ;
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+
+  main h2 {
+    font-size: 30px;
+    /* font-weight: 100; */
+    /* margin-top: 0; */
+  }
+
+  .blue-buttons {
+    padding: 25px 40px;
+    font-size: 30px;
+  }
+  
+  .car-desc p,
+.events-desc p {
+  font-size: 20px;
+}
+
+
 }
