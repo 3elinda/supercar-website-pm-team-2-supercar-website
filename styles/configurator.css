@@ -198,10 +198,26 @@ details > summary {
   cursor: pointer;
 }
 
-details > p {
+details > div {
   background: #131417;
   width: 375px;
   height: 215px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-around;
+}
+
+.color-names {
+  display: flex;
+  justify-content: space-around;
 }
 
 .red-button {
