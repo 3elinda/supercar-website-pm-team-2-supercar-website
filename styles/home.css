@@ -145,7 +145,6 @@ input:checked ~ .m-side {
   background-size: cover;
   position: relative;
   height: 100vh;
-  /* border: 2px solid red; */
 }
 
 .hero-text {
@@ -156,7 +155,6 @@ input:checked ~ .m-side {
   left: 50%;
   transform: translate(-50%);
   width: 100%;
-  /* border: 2px solid red; */
 }
 
 .blue-buttons {
@@ -183,7 +181,7 @@ input:checked ~ .m-side {
 .hero-text h1 {
   margin-top: 0;
   margin-bottom: 0;
-  /* border: 2px solid green; */
+  padding-top: 1%;
 }
 
 h1 {
@@ -412,6 +410,18 @@ h3 {
   height: 45px;
 }
 
+/* tablet */
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 190px;
+  }
+
+  .hero-image {
+    background-size: contain;
+  }
+}
+
+/* mobile */
 @media screen and (max-width: 520px){
   .hero-image {
     background-size: contain;
@@ -419,7 +429,7 @@ h3 {
   }
 
   .hero-text h1{
-    padding-top: ;
+    padding-top: 5%;
   }
 
   h1 {
@@ -428,8 +438,6 @@ h3 {
 
   main h2 {
     font-size: 30px;
-    /* font-weight: 100; */
-    /* margin-top: 0; */
   }
 
   .blue-buttons {
@@ -442,5 +450,41 @@ h3 {
   font-size: 20px;
 }
 
+  footer {
+    max-height: fit-content;
+  }
 
+  footer h2, .footnav h2 {
+    margin-left: 5%;
+  }
+
+  footer p:first-of-type {
+    margin-left: 5%;
+  }
+
+  .email {
+    margin-left: 5%;
+  }
+
+  .footnavcontent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footnav p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 43vh;
+    margin: 0;
+    padding-bottom: 5%;
+    width: 46vw;
+    transform: translate(50%);
+  }
+
+  .trion-socials {
+    position: absolute;
+    transform: translateY(145%);
+    align-self: center;
+  }
 }

@@ -251,3 +251,29 @@ h2,
 h3 {
   font-family: orbitron;
 }
+
+/* tablet */
+
+@media screen and (max-width: 1024px) {
+
+  .blue-buttons{
+    padding: 25px 40px;
+    font-size: 40px;
+  }
+
+  #nemesis-button {
+    padding-right: 99px;
+    padding-left: 99px;
+  }
+
+  .car-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4%;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 520px){
+  
+}
