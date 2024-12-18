@@ -350,3 +350,77 @@ h3 {
   width: 45px;
   height: 45px;
 }
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .hero-image {
+    background-size: contain;
+  }
+
+  h1 {
+    font-size: 190px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 520px){
+  .hero-image {
+    background-size: contain;
+    height: 50vh;
+  }
+
+  .hero-text h1{
+    padding-top: 5%;
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+
+  main h2 {
+    font-size: 30px;
+  }
+
+  .blue-buttons {
+    padding: 25px 40px;
+    font-size: 30px;
+  }
+
+  footer {
+    max-height: fit-content;
+  }
+
+  footer h2, .footnav h2 {
+    margin-left: 5%;
+  }
+
+  footer p:first-of-type {
+    margin-left: 5%;
+  }
+
+  .email {
+    margin-left: 5%;
+  }
+
+  .footnavcontent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footnav p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 43vh;
+    margin: 0;
+    padding-bottom: 5%;
+    width: 46vw;
+    transform: translate(50%);
+  }
+
+  .trion-socials {
+    position: absolute;
+    transform: translateY(145%);
+    align-self: center;
+  }
+}

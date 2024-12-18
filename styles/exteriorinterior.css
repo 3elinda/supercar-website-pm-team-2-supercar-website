@@ -242,3 +242,57 @@ h2,
 h3 {
   font-family: orbitron;
 }
+
+/* tablet */
+
+@media screen and (max-width: 1024px) {
+
+  .blue-buttons{
+    padding: 25px 90px;
+    font-size: 40px;
+  }
+
+  .car-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3%;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 520px){
+  .trapezoid {
+    clip-path: polygon(0% 100%, 0% 100%, 100% 0, 0 0);
+    width: 96%;
+  }
+  .trapezoid2 {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 100% 0);
+    width: 96%;
+    transform: translateX(4%);
+    background: url(/images/BlackWidow-front\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .car-options {
+    flex-direction: column;
+    align-items: flex-end;
+    height: 70vh;
+    transform: translateY(-250%);
+  }
+  
+    .blue-buttons{
+      padding: 15px 70px;
+      font-size: 30px;
+    }
+  
+    .exterior-container {
+      align-self: flex-start;
+      margin-left: 4%;
+    }
+  
+    .interior-container {
+      margin-right: 4%;
+    }
+
+  }

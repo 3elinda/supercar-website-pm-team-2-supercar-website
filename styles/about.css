@@ -416,6 +416,34 @@ h3 {
   height: 45px;
 }
 
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .hero-image {
+    background-size: contain;
+    background-position: top;
+  }
+
+  h1 {
+    font-size: 190px;
+  }
+
+  .explanation {
+    /* border: 2px solid red; */
+    width: 100%;
+  }
+
+  .explanation img {
+    /* border: 2px solid green; */
+    
+  }
+
+  .apart-txt-cont {
+    align-self: center;
+  }
+}
+
+/* mobile */
 @media screen and (max-width: 520px){
   .hero-image {
     background-size: contain;
@@ -432,8 +460,6 @@ h3 {
 
   main h2 {
     font-size: 30px;
-    /* font-weight: 100; */
-    /* margin-top: 0; */
   }
 
   .blue-buttons {
@@ -441,5 +467,5 @@ h3 {
     font-size: 30px;
   }
   
-  
 }
+

@@ -12,7 +12,6 @@ body {
 }
 
 nav {
-  /* border: 2px solid red; */
   margin: 0;
   height: 60px;
   width: 100%;
@@ -23,7 +22,6 @@ nav {
 }
 
 .nav-content {
-  /* border: 2px solid purple; */
   display: flex;
   justify-content: space-between;
   width: 50%;
@@ -67,7 +65,6 @@ ul li {
   list-style: none;
   font-family: orbitron;
   font-size: 40px;
-  /* text-align: center; */
 }
 
 ul li a {
@@ -98,7 +95,6 @@ input {
   left: calc(45px / 2);
   background-color: #000;
   cursor: pointer;
-  /* border: 2px solid yellow; */
 }
 
 .toggle .lines {
@@ -164,13 +160,11 @@ h1 {
 /* SUPERCARS PAGE******/
 
 .supercars {
-  /* border: 2px solid red; */
   position: relative;
   height: 93.5vh;
 }
 
 .logo-container {
-  /* border: 2px solid green; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,14 +178,12 @@ h1 {
 }
 
 .cars {
-  /* border: 2px solid blue; */
   display: flex;
   height: 93.5vh;
   position: relative;
 }
 
 .trapezoid {
-  /* width: 839px; */
   width: 60vw;
   height: 93.5vh;
   background: url(/images/Nemesis-back-full.png);
@@ -199,7 +191,6 @@ h1 {
   background-size: cover;
   clip-path: polygon(0% 100%, 60% 100%, 100% 0, 0 0);
   position: absolute;
-  /* border: 2px solid yellowgreen; */
 }
 /*0 100% is bottom-left corner, 
     60% 100% means bottom-right corner is 60% across width,
@@ -208,7 +199,6 @@ h1 {
 /* clip-path-clips an element to create a shape */
 
 .trapezoid2 {
-  /* width: 839px; */
   width: 60vw;
   height: 93.5vh;
   background: url(/images/BlackWidow-front.png);
@@ -217,7 +207,6 @@ h1 {
   clip-path: polygon(0 100%, 100% 100%, 100% 0, 40% 0);
   position: absolute;
   transform: translateX(65%);
-  /* border: 2px solid hotpink; */
 }
 
 .car-options {
@@ -227,7 +216,6 @@ h1 {
   color: white;
   height: 93.5vh;
   transform: translateY(-200%);
-  /* border: 2px solid blue; */
 }
 
 #nemesis-button {
@@ -275,5 +263,42 @@ h3 {
 
 /* mobile */
 @media screen and (max-width: 520px){
-  
+.trapezoid {
+  clip-path: polygon(0% 100%, 0% 100%, 100% 0, 0 0);
+  width: 96%;
+}
+.trapezoid2 {
+  clip-path: polygon(0 100%, 100% 100%, 100% 0, 100% 0);
+  width: 96%;
+  transform: translateX(4%);
+  background: url(/images/BlackWidow-front\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.car-options {
+  flex-direction: column;
+  align-items: flex-end;
+  height: 70vh;
+  transform: translateY(-250%);
+}
+
+  .blue-buttons{
+    padding: 15px 30px;
+    font-size: 30px;
+  }
+
+  .nemesis-container {
+    align-self: flex-start;
+    margin-left: 4%;
+  }
+
+  .blackwidow-container {
+    margin-right: 4%;
+  }
+
+  #nemesis-button {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
 }
