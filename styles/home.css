@@ -454,20 +454,12 @@ h3 {
     max-height: fit-content;
   }
 
-  .footercontent {
-    /* max-width: 70%; */
+  .input {
+    width: 400px;
   }
 
-  footer h2, .footnav h2 {
-    /* margin-left: 5%; */
-  }
-
-  footer p:first-of-type {
-    /* margin-left: 5%; */
-  }
-
-  .email {
-    /* margin-left: 5%; */
+  .subscribe {
+    width: 50%;
   }
 
   .social-links {
@@ -477,39 +469,23 @@ h3 {
     align-items: flex-end;
     height: 25%;
     left: 45%;
-    transform: translateY(-280%);
-    /* border: 2px solid green; */
-  }
-
-
-  .footnavcontent {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+    transform: translateY(-236%);
   }
 
   .footnav p {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 30vh;
-    margin: 0;
+    height: 32vh;
+    margin-top: 0;
+    margin-left: 35%;
     padding-bottom: 5%;
-    /* width: 46vw; */
-    left: 50%;
-    /* transform: translateX(-50%); */
-    /* border: 2px solid green; */
+    width: 100%;
   }
 
   .trion-logo-foot {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -160%);
-    /* border: 2px solid hotpink; */
+    transform: translate(-50%, -165%);
   }
-
-  /* .trion-socials img {
-    position: absolute;
-    transform: translateY(145%);
-    align-self: center;
-  } */
 }
