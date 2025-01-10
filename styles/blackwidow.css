@@ -385,7 +385,7 @@ h3 {
   }
 
   h1 {
-    font-size: 190px;
+    font-size: 180px;
   }
 
   .the-future-text {
@@ -420,11 +420,6 @@ h3 {
   .blue-buttons {
     padding: 25px 40px;
     font-size: 30px;
-  }
-
-  .car-desc p,
-  .events-desc p {
-    font-size: 20px;
   }
   
     footer {

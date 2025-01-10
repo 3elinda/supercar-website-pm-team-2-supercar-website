@@ -184,7 +184,6 @@ input:checked ~ .m-side {
 .hero-text h1 {
   margin-top: 0;
   margin-bottom: 0;
-  /* border: 2px solid green; */
 }
 
 /* Main Section */
@@ -199,6 +198,10 @@ main {
 main h2 {
   font-size: 50px;
   font-weight: 100;
+}
+
+.chevron-left {
+  /* border: 2px solid blue; */
 }
 
 .nemesis-info {
@@ -360,7 +363,7 @@ h3 {
   }
 
   h1 {
-    font-size: 190px;
+    font-size: 180px;
   }
 }
 

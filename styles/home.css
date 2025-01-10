@@ -413,12 +413,26 @@ h3 {
 /* tablet */
 @media screen and (max-width: 1024px) {
   h1 {
-    font-size: 190px;
+    font-size: 180px;
   }
 
   .hero-image {
     background-size: contain;
   }
+
+  .car-desc,
+.events-desc{
+    padding: 3%;
+  }
+
+  .car-desc,
+.drive-desc,
+.blackwidowmain,
+.nemesismain,
+.sema-logo,
+.events-desc {
+  
+}
 }
 
 /* mobile */
