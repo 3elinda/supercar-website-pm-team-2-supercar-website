@@ -438,13 +438,43 @@ h3 {
 
   main h2 {
     font-size: 30px;
+    max-width: 168px;
   }
 
   .blue-buttons {
     padding: 25px 40px;
     font-size: 30px;
   }
+
+  .car-desc,
+.drive-desc,
+.blackwidowmain,
+.nemesismain,
+.sema-logo,
+.events-desc {
+  padding: 2%;
+  max-width: 45%;
+}
+
+.blackwidowmain, .nemesismain {
+  max-width: 45%;
+  padding: 0;
+}
+
+.blackwidowmain {
+  padding-top: 5%;
+}
   
+  .car-desc h2 {
+    font-size: 26px;
+    
+  }
+
+  .sema-logo {
+    object-fit: contain;
+    padding: 0;
+  }
+
   .car-desc p,
 .events-desc p {
   font-size: 20px;
