@@ -86,6 +86,9 @@ h1 {
   height: 45px;
   width: 45px;
   background-color: #65697f;
+  background-image: url(/images/chevron-left.png);
+  background-repeat: no-repeat;
+  background-position: center;
   cursor: pointer;
   transition: 0.5s ease;
   right: 0;
@@ -308,4 +311,51 @@ h4 {
 
 p {
   font-family: lexend;
+}
+
+/* mobile */
+@media screen and (max-width: 520px) {
+
+  .toggle {
+    left: 0;
+    top: 85%;
+    margin-left: 5%;
+    background-image: url(/images/chevron-down.png);
+  }
+
+  input:checked ~ .toggle {
+    transform: translateY(-403px);
+  }
+  
+  .sidebar {
+    transform: translateY(914px);
+    height: 50%;
+    box-shadow: 0px 4px 50px 23px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+  }
+
+  /* .logo-center {
+    background-image: url(/images/trion-logo.png);
+  } */
+
+  .shape-and-arrow:first-of-type {
+    padding-top: 25%;
+  }
+
+  input:checked ~ .sidebar {
+    top: 50%;
+    overflow: scroll;
+  }
+
+  input:checked ~ .sidebar .shape-and-arrow:first-of-type {
+    padding-top: 0;
+  }
+
+  details > summary {
+    height: 70px;
+  }
+
+  /* .red-button {
+
+  } */
 }

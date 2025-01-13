@@ -52,6 +52,10 @@ nav {
   margin-left: 10%;
 }
 
+.chevron-left {
+  padding-left: 2%;
+}
+
 /* slide animation for menu*/
 .m-side {
   height: 100%;
@@ -198,10 +202,6 @@ main {
 main h2 {
   font-size: 50px;
   font-weight: 100;
-}
-
-.chevron-left {
-  /* border: 2px solid blue; */
 }
 
 .nemesis-info {

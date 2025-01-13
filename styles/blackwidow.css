@@ -52,6 +52,10 @@ nav {
   margin-left: 10%;
 }
 
+.chevron-left {
+  padding-left: 2%;
+}
+
 /* slide animation for menu*/
 .m-side {
   height: 100%;
