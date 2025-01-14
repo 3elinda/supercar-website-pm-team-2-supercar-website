@@ -334,12 +334,24 @@ p {
     overflow: hidden;
   }
 
-  /* .logo-center {
-    background-image: url(/images/trion-logo.png);
-  } */
+  .logo-center {
+    display: flex;
+    height: 115px;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: 0.5s ease;
+    /* border: 2px solid blue; */
+  }
+
+  input:checked ~ .logo-center {
+    top: 45.5%;
+  }
 
   .shape-and-arrow:first-of-type {
-    padding-top: 25%;
+    padding-top: 60%;
   }
 
   input:checked ~ .sidebar {
@@ -348,14 +360,29 @@ p {
   }
 
   input:checked ~ .sidebar .shape-and-arrow:first-of-type {
-    padding-top: 0;
+    padding-top: 20%;
   }
 
   details > summary {
     height: 70px;
   }
 
-  /* .red-button {
+  .shape-and-arrow {
+    margin-bottom: 5%;
+  }
 
-  } */
+  .shape5 {
+    margin-bottom: 10%;
+  }
+
+  .button-container {
+    position: sticky;
+    bottom: 7%;
+  }
+
+  .red-button {
+    left: 0;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
