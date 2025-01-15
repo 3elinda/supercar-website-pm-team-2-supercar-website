@@ -323,13 +323,13 @@ p {
   }
 
   input:checked ~ .toggle {
-    /* transform: translateY(-403px); */
-    transform: translateY(-815%);
+    transform: translateY(-403px);
+    /* transform: translateY(-815%); */
   }
 
   .sidebar {
-    /* transform: translateY(914px); */
-    transform: translateY(180%);
+    transform: translateY(914px);
+    /* transform: translateY(180%); */
     height: 50%;
     box-shadow: 0px 4px 50px 23px rgba(255, 255, 255, 0.2);
     overflow: hidden;

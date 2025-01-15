@@ -61,10 +61,107 @@
 
   /* HERO IMAGE */
 .hero-image {
-    background-image: url(/images/);
+    background-image: url(/images/Nemesis_front-side.png);
     /* background: linear-gradient(180deg, #252525 6%, #8B8B8B 100%); */
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     height: 50vh;
   }
+
+/* MAIN */
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-1 {
+  margin-left: 5%;
+}
+
+.shape-and-arrow {
+  /* border: 2px solid blue; */
+  display: flex;
+  margin-bottom: 8%;
+}
+
+.shape-and-arrow:has(details[open]) .arrow-down {
+  display: none;
+}
+
+.shape-and-arrow:has(details:not([open])) .arrow-up {
+  display: none;
+}
+
+.shape-and-arrow:has(details[open]) .trapezoid-down {
+  clip-path: polygon(0% 100%, 85% 100%, 100% 0, 0 0);
+}
+
+details > summary {
+  background: linear-gradient(
+    90deg,
+    #12162d 6%,
+    #1a2148 29.5%,
+    #232c5f 52.5%,
+    #313c78 100%
+  );
+  width: 425px;
+  height: 80px;
+  clip-path: polygon(0% 100%, 100% 100%, 85% 0, 0 0);
+  display: flex;
+  align-items: center;
+  font-family: orbitron;
+  font-size: 25px;
+  padding-left: 5%;
+  cursor: pointer;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price p {
+  font-family: lexend;
+}
+
+.sect-2-container {
+  border-left: 1px solid #5a5a5a;
+  border-right: 1px solid #5a5a5a;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: questrial;
+}
+
+.logo-container {
+  display: flex;
+  height: 150px;
+  justify-self: center;
+}
+
+
+
+@font-face {
+  font-family: orbitron;
+  src: url(/fonts/Orbitron-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: lexend;
+  src: url(/fonts/Lexend-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: questrial;
+  src: url(/fonts/Questrial-Regular.ttf);
+}
+
+h1,
+h2,
+h3 {
+  font-family: orbitron;
+}
+
+h2 {
+  font-size: 50px;
+}
