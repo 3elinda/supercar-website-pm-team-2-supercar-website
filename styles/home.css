@@ -258,7 +258,7 @@ main h2 {
 }
 
 .sema-logo {
-  object-fit: cover;
+  object-fit: contain;
   padding-left: 4%;
   padding-right: 4%;
 }
