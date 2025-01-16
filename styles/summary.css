@@ -1,73 +1,71 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #000;
-    color: white;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-  }
-  
-  nav {
-    /* border: 2px solid red; */
-    margin: 0;
-    height: 60px;
-    width: 100%;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .nav-content {
-    /* border: 2px solid purple; */
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin-right: calc(45px / 2);
-  }
-  
-  .nav-logo {
-    display: flex;
-    height: 45px;
-    margin: 5px 0;
-    margin: 0 auto;
-  }
-  
-  .nav-icons {
-    display: flex;
-    justify-content: flex-end;
-    height: 45px;
-    width: 100%;
-  }
-  
-  .first-icon {
-    margin-top: 2px;
-  }
-  
-  .second-icon {
-    margin-left: 10%;
-  }
-  
-  .arrow-container {
-    margin-right: 45%;
-  }
-  
-  .active-page {
-    color: #7c270b;
-  }
+  box-sizing: border-box;
+}
 
-  /* HERO IMAGE */
+body {
+  background-color: #000;
+  color: white;
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+nav {
+  margin: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: calc(45px / 2);
+}
+
+.nav-logo {
+  display: flex;
+  height: 45px;
+  margin: 5px 0;
+  margin: 0 auto;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: flex-end;
+  height: 45px;
+  width: 100%;
+}
+
+.first-icon {
+  margin-top: 2px;
+}
+
+.second-icon {
+  margin-left: 10%;
+}
+
+.arrow-container {
+  margin-right: 45%;
+}
+
+.active-page {
+  color: #7c270b;
+}
+
+/* HERO IMAGE */
 .hero-image {
-    background-image: url(/images/Nemesis_front-side.png);
-    /* background: linear-gradient(180deg, #252525 6%, #8B8B8B 100%); */
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 50vh;
-  }
+  background-image: url(/images/Nemesis_front-side.png);
+  /* background: linear-gradient(180deg, #252525 6%, #8B8B8B 100%); */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 50vh;
+}
 
 /* MAIN */
 main {
@@ -80,9 +78,8 @@ main {
 }
 
 .shape-and-arrow {
-  /* border: 2px solid blue; */
   display: flex;
-  margin-bottom: 8%;
+  margin-bottom: 5%;
 }
 
 .shape-and-arrow:has(details[open]) .arrow-down {
@@ -125,6 +122,10 @@ details > summary {
   font-family: lexend;
 }
 
+.section-2 {
+  margin-right: 5%;
+}
+
 .sect-2-container {
   border-left: 1px solid #5a5a5a;
   border-right: 1px solid #5a5a5a;
@@ -139,7 +140,51 @@ details > summary {
   justify-self: center;
 }
 
+.blue-round-btns {
+  border-radius: 170px;
+  text-align: center;
+  color: white;
+  padding: 15px 28px;
+  margin-bottom: 5%;
+  font-size: 30px;
+  font-family: lexend;
+  background: linear-gradient(
+    103deg,
+    rgba(63, 82, 192, 0.8) -0.19%,
+    rgba(63, 82, 192, 0.1) 81.19%
+  );
+  box-shadow: 0px 4px 50px 0px rgba(255, 255, 255, 0.25);
+  border: 1px solid #babed2;
+}
 
+.blue-round-btns:last-of-type {
+  margin-bottom: 15%;
+}
+
+.blue-round-btns a:link {
+  text-decoration: none;
+}
+
+.blue-round-btns a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.send-to-trion-btn {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 25px 100px;
+  border: 0.914px solid #702528;
+  color: white;
+  font-family: questrial;
+  font-size: 30px;
+  text-decoration: none;
+  background: linear-gradient(
+    103deg,
+    rgba(130, 22, 25, 0.8) -0.19%,
+    rgba(130, 22, 25, 0.1) 81.19%
+  );
+}
 
 @font-face {
   font-family: orbitron;
@@ -164,4 +209,62 @@ h3 {
 
 h2 {
   font-size: 50px;
+}
+
+/* mobile */
+@media screen and (max-width: 520px) {
+  .hero-image {
+    background-size: contain;
+  }
+
+  main {
+    flex-direction: column;
+    /* overflow: scroll; */
+  }
+
+  .sect-2-container {
+    border: none;
+    padding: 0;
+    margin: 5%;
+  }
+
+  .buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .blue-round-btns {
+    font-size: 15px;
+    width: 45%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .blue-round-btns a {
+    margin: 0;
+  }
+
+  .blue-round-btns:last-of-type {
+    margin-bottom: 0;
+  }
+
+  details > summary {
+    width: 370px;
+  }
+
+  .price {
+    margin-right: 10%;
+    margin-bottom: 10%;
+    font-size: 20px;
+  }
+
+  .send-to-trion-container {
+    margin-bottom: 10%;
+  }
+
+  .send-to-trion-btn {
+    border-radius: 170px;
+  }
 }
